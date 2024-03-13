@@ -1,0 +1,215 @@
+<section class="cuerpo">
+    <div class="text-center w-75 mt-2">
+        <h1>Dinero de caja</h1>
+        <hr>
+    </div>
+    <div class="row text-center justify-content-center">
+        <div class="col-3 rounded-3 me-3 expense-tracking">
+            <div class="div-container-image-expense-tracking">
+                <div class="div-image-expense-tracking">
+                    <i class="bi bi-receipt-cutoff imagen-cu"></i>
+                </div>
+            </div>
+            <div class="div-expense-tracking-container">
+                <div class="expense-tracking-containers">
+                    <div>
+                        <h4 class="titles-container-expense float-start">Ventas</h4>
+                        <form class="form-control" style="border: 0; background-color: rgba(250, 235, 215, 0);">
+                            <input disabled="" type="text" value="$620.00" class="input-group text-center fs-4"
+                                style=" background-color: rgba(240, 248, 255, 0); border: 0;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 rounded-3 me-3 expense-tracking">
+            <div class="div-container-image-expense-tracking">
+                <div class="div-image-expense-tracking">
+                    <i class="bi bi-basket"></i>
+                </div>
+            </div>
+            <div class="div-expense-tracking-container">
+                <div class="expense-tracking-containers">
+                    <div>
+                        <h4 class="titles-container-expense float-start">Gastos</h4>
+                        <form class="form-control" style="border: 0; background-color: rgba(250, 235, 215, 0);">
+                            <input disabled="" type="text" value="$500.00" class="input-group text-center fs-4"
+                                style=" background-color: #ffffff00; border: 0;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 rounded-3 me-3 expense-tracking">
+            <div class="div-container-image-expense-tracking">
+                <div class="div-image-expense-tracking">
+                    <i class="bi bi-cash-coin"></i>
+                </div>
+            </div>
+            <div class="div-expense-tracking-container">
+                <div class="expense-tracking-containers">
+                    <div>
+                        <h4 class="titles-container-expense">Ganancias netas</h4>
+                        <form class="form-control" style="border: 0; background-color: rgba(250, 235, 215, 0);">
+                            <input disabled="" type="text" value="$120.00" class="input-group text-center fs-4"
+                                style=" background-color: rgba(240, 248, 255, 0); border: 0;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-center">
+            <h3 class="text">Historial de ventas</h3>
+            <hr>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="text-center row-cols-5">
+                            <th class="col">Cajero</th>
+                            <th class="col">Precio</th>
+                            <th class="col">Dinero recibido</th>
+                            <th class="col">Fecha</th>
+                            <th class="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center row-cols-5">
+                            <td class="col">Cajero 1</td>
+                            <td class="col">120</td>
+                            <td class="col">200</td>
+                            <td class="col">2024-02-25 22:30:03</td>
+                            <td class="col">
+                                <div class="justify-content-center">
+                                    <a href="#" class="btn">Ver</a>
+                                    <a href="#" class="btn text-danger">Borrar</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="text-center row-cols-5">
+                            <td class="col">Cajero 1</td>
+                            <td class="col">200</td>
+                            <td class="col">200</td>
+                            <td class="col">2024-02-25 22:38:21</td>
+                            <td class="col">
+                                <div class="justify-content-center">
+                                    <a href="#" class="btn">Ver</a>
+                                    <a href="#" class="btn text-danger">Borrar</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="text-center row-cols-5">
+                            <td class="col">Cajero 1</td>
+                            <td class="col">300</td>
+                            <td class="col">500</td>
+                            <td class="col">2024-02-25 22:40:34</td>
+                            <td class="col">
+                                <div class="justify-content-center">
+                                    <a href="#" class="btn">Ver</a>
+                                    <a href="#" class="btn text-danger">Borrar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-dark mt-5 col-2 d-block" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Ver detalles
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <h3 class="text">Historial de ventas</h3>
+                            <hr>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr class="text-center row-cols-5">
+                                            <th class="col">Cajero</th>
+                                            <th class="col">Precio</th>
+                                            <th class="col">Dinero recibido</th>
+                                            <th class="col">Fecha</th>
+                                            <th class="col">Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-center row-cols-5">
+                                            <td class="col">Cajero 1</td>
+                                            <td class="col">150</td>
+                                            <td class="col">200</td>
+                                            <td class="col">2023-12-23 14:40:34</td>
+                                            <td class="col">
+                                                <div class="justify-content-center">
+                                                    <a href="#" class="btn">Ver</a>
+                                                    <a href="#" class="btn text-danger">Borrar</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <div class="text-center">
+        <h3 class="text">Historial de ventas</h3>
+        <hr>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="text-center row-cols-5">
+                        <th class="col">Cajero</th>
+                        <th class="col">Precio</th>
+                        <th class="col">Dinero recibido</th>
+                        <th class="col">Fecha</th>
+                        <th class="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center row-cols-5">
+                        <td class="col">Cajero 1</td>
+                        <td class="col">150</td>
+                        <td class="col">200</td>
+                        <td class="col">2023-12-23 14:40:34</td>
+                        <td class="col">
+                            <div class="justify-content-center">
+                                <a href="#" class="btn">Ver</a>
+                                <a href="#" class="btn text-danger">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+</section>

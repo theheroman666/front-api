@@ -1,0 +1,107 @@
+@media screen and (max-width: 970px) {
+    .body {
+        background-color: #f1f3fa;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        height: 8vh;
+        width: 100vw;
+        background-color: #fff;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .navigation ul li {
+        list-style: none;
+        width: calc(100vw / 6);
+        height: 100%;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navigation ul li a {
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .navigation ul li a .iconoM {
+        font-size: 25px;
+        color: #707070;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 970px) {
+
+
+        nav {
+            height: 15vh;
+        }
+
+        .navigation ul {
+            display: flex;
+            width: 100%;
+            height: 13vh;
+            align-items: center;
+            padding-left: 0;
+        }
+
+        .navigation ul li.activo a .iconoM {
+            color: #0e0e0e;
+            font-size: 27px;
+            font-weight: 500;
+            transition: all 0.1s ease;
+        }
+
+
+        .navigation ul li.activo a {
+            width: 40%;
+            border-radius: 50%;
+            background-color: #a098fc31;
+        }
+
+    }
+
+
+    @media screen and (min-width:250px) and (max-width: 600px) {
+
+        .navigation ul li.activo a .iconoM {
+            color: #0e0e0e;
+            font-size: 27px;
+            font-weight: 500;
+            transition: all 0.1s ease;
+        }
+
+        .navigation ul li.activo a {
+
+            border-radius: 50%;
+            background-color: #a098fc31;
+        }
+
+        /***** Chart *****/
+        .chartCard{
+            min-width: 100%;
+        }
+        /***** End Chart *****/
+    }
+
+}

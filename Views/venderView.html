@@ -1,0 +1,75 @@
+<div class="cuerpo">
+    <div id="ordenes-title" class="w-75 text-center" >
+        <h1 class="mt-2">Ordenes </h1>
+        <hr>
+    </div>
+    <div id="preview-container" class="container">
+        <button class="boton-orden " onclick="crearOrden()">Crear Orden</button>
+        <ul id="order-list">
+            <li class="order-item">
+                <span class="span-orden-nombre">Cliente: Gabriel Olvera</span>
+                <span class="span-orden-precio">$120</span>
+                <span class="span-acciones">
+                    <button id="btn-editar">Editar</button>
+                    <button id="btn-cobrar">Cobrar</button>
+                    <button id="btn-borrar"><i class="bi bi-trash3"></i></button>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <section id="section-Pos" class="sectionVender" style="display: none;">
+        <div class="contenedor-superior">
+            <div id="product-list-container">
+                <div class="total">Total: $<span id="product-total">0</span></div>
+                <h2>Lista de Productos</h2>
+                <ul id="product-list">
+
+                </ul>
+            </div>
+            <div id="pos-container">
+                <div class="product-buttons">
+
+                </div>
+            </div>
+        </div>
+        <div class="div-finalize">
+            <button class="button-finalize" onclick="finalizarOrden()">Finalizar Orden</button>
+        </div>
+    </section>
+
+
+    <div id="nombre-cliente-modal" class="modal modal-nombre-cliente">
+        <p>Ingresa el nombre del cliente:</p>
+        <input type="text" id="nombre-cliente-input" class="input-nombre">
+        <button onclick="finalizarOrdenConNombre()" class="btn-finalize-nombre">Finalizar Orden</button>
+    </div>
+    <div id="modal-background" class="modal-background"></div>
+</div>
+
+
+<!-- 
+    <div id="preview-container" class="container contenedor-mesas">
+    <button class="button mesas" onclick="crearOrden()">Crear Orden</button>
+    <ul id="order-list"></ul>
+</div>
+<div id="pos-container" class="container" style="display: none;">
+    <div id="product-list-container">
+        <h2>Lista de Productos</h2>
+        <ul id="product-list">
+        </ul>
+        <div>Total: $<span id="product-total">0</span></div>
+    </div>
+    <div class="product-buttons">
+    </div>
+    <div class="button-finalize">
+        <button onclick="finalizarOrden()">Finalizar Orden</button>
+    </div>
+</div>
+<div id="nombre-cliente-modal" class="modal modal-nombre-cliente">
+    <p>Ingresa el nombre del cliente:</p>
+    <input type="text" id="nombre-cliente-input">
+    <button onclick="finalizarOrdenConNombre()">Finalizar Orden</button>
+</div>
+<div id="modal-background" class="modal-background"></div>
+ -->

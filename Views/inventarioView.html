@@ -1,0 +1,57 @@
+<div class="cuerpo-inventario">
+    <div class="w-75 text-center">
+        <h1 class="mt-2">Inventario </h1>
+        <hr>
+    </div>
+    <div id="vistaPrimaria">
+        <button onclick="abrirVistaInventario()" class="btn-anadir">Añadir al Inventario</button>
+        <button onclick="verInventario()" class="btn-inventario">Ver Inventario</button>
+    </div>
+
+    <div id="vistaInventario">
+        <div class="addInv">
+            <input type="text" placeholder="Descripción" id="descripcionInput" required>
+            <input type="number" placeholder="Precio" id="precioInput" required>
+            <select id="tipoInput" required>
+                <option value="gastos">Gastos</option>
+                <option value="inventario">Inventario</option>
+            </select>
+            <button class="boton-anadir-inventario" onclick="agregarElemento()">Añadir</button>
+            <button class="boton-cencelar-inventario" onclick="abrirModalConfirmacion()">Cancelar</button>
+            <button class="boton-guardar-inventario" onclick="guardarTabla()">Guardar</button>
+        </div>
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th class="col-4">Descripción</th>
+                    <th class="col-4">Costo</th>
+                    <th class="col-4">Tipo</th>
+                </tr>
+            </thead>
+            <tbody id="tablaInventario" class="table-group-divider">
+                <tr>
+                    <!-- Aquí se mostrarán los elementos añadidos -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div id="vistaVerInventario">
+        <button class="float-end btn text-danger text-center" style="margin: -1em -1em 0 0; height: 5em; width: 6em;" onclick="cerrarVistaVerInventario()">Cerrar</button>
+        <h2 class="mt-1"> Inventario</h2>
+        <table id="tablaVerInventario" border="1">
+            <!-- Aquí se mostrarán los elementos del inventario -->
+        </table>
+    </div>
+
+    <div id="modalConfirmacion">
+        <div id="modal-confirmacion-cancelar">
+            <p>¿Seguro que quieres cancelar? Se perderán los cambios.</p>
+            <button id="btn-cancelar-cancelacion" class="btn rounded-3 float-start mt-4 h-50" onclick="cerrarModalConfirmacion()">Cancelar</button>
+            <button id="btn-confirmar-cancelacion" class="btn text-danger    rounded-3 float-end mt-4 h-50" onclick="limpiarTablaYCerrar()">Confirmar</button>
+        </div>
+    </div>
+
+    <div id="modal-background-inventario" class="modal-background"></div>
+</div>
